@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SenderActivity">
+
+    <TextView
+        android:id="@+id/textnome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textsobrenome"
+        android:layout_marginTop="57dp"
+        android:text="Nome:"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textsobrenome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textidade"
+        android:layout_marginTop="101dp"
+        android:text="Sobrenome:"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="160dp"
+        android:text="Idade:"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/editnome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textnome"
+        android:layout_toEndOf="@+id/textsobrenome"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/editsobrenome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textsobrenome"
+        android:layout_toEndOf="@+id/textsobrenome"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/editidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textidade"
+        android:layout_toEndOf="@+id/textsobrenome"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/benviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="211dp"
+        android:text="Enviar" />
+</RelativeLayout>
